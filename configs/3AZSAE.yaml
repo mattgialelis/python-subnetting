@@ -1,0 +1,72 @@
+---
+3AZSAE:
+  Order:
+    - public
+    - enterprise
+    - restricted
+
+  23: #Nano
+    public:
+      ips: 3
+      cidr: 26
+    enterprise:
+      ips: 3
+      cidr: 26
+    restricted:
+      ips: 3
+      cidr: 27
+
+  22: #Micro
+    public:
+      ips: 3
+      cidr: 25
+    enterprise:
+      ips: 3
+      cidr: 25
+    restricted:
+      ips: 3
+      cidr: 26
+
+  21: #Small
+    public:
+      ips: 3
+      cidr: 24
+    enterprise:
+      ips: 3
+      cidr: 24
+    restricted:
+      ips: 3
+      cidr: 25
+
+  20: #Medium
+    public:
+      ips: 3
+      cidr: 23
+    enterprise:
+      ips: 3
+      cidr: 23
+    restricted:
+      ips: 3
+      cidr: 24
+
+  19: #Large
+    public:
+      ips: 3
+      cidr: 22
+    enterprise:
+      ips: 3
+      cidr: 22
+    restricted:
+      ips: 3
+      cidr: 23
+
+  18: #X-Large
+    public:
+      ips: 3
+      cidr: 21
+    enterprise:
+      ips: 3
+      cidr: 21
+    restricted:
+      ips: 3
+      cidr: 22
