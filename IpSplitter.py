@@ -45,9 +45,6 @@ class IPSplitter(object):
     def get_available_ranges(self):
         return sorted(self.avail_ranges, key=lambda x: x.prefixlen, reverse=True)
 
-    def remove_avail_range(self, ip_network):
-        self.avail_ranges.remove(ip_network)
-
     def loop_exculde(self, net, exclude):
         return_list = []
         for net in net:
