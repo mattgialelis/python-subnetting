@@ -16,12 +16,17 @@ class IPSplitter(object):
                 inc_subnet = self.subnetter(self.get_available_ranges()[while_count], prefix, 1)
                 subnets.append(inc_subnet[0])
 
-            except ValueError as e:
+            except ValueError:
                 print('DEBUG: CANT SUBTRACT FROM AVAILABLE RANGE python var self.get_available_ranges()')
                 while_count += 1
 
-            except IndexError as e:
+            except IndexError:
                 print('DEBUG: WHILE_COUNT ERROR', while_count)
+                print('REASON: Cant subtract requested ips from available ranges')
+                print('Ranges:', self.get_available_ranges(),
+                      '\n Requested Range Prefix:', prefix,
+                      '\n Requested Amount:', ip_count,
+                      )
                 break
 
         if len(subnets) >= ip_count:
