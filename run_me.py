@@ -44,7 +44,8 @@ def subnet_producer(vpc_range, allocation):
         cidr_prefix = config[vpc_prefix][types]['cidr']
 
         # print('--------------', type.upper(), '------ Range Count: ', ip_count,'------ Prefix: ', cidr_prefix,'--------')
-        data[types] = subnetter.get_subnet(cidr_prefix, ip_count)
+        data[types] = ','.join(subnetter.get_subnet(cidr_prefix, ip_count))
+
     return  data
 
 def main(sysarg):
