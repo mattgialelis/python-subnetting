@@ -2,12 +2,16 @@
 3AZSAD:
   Order:
     - public
+    - unallocated
     - enterprise
     - restricted
 
   23: #Nano
     public:
-      ips: 6
+      ips: 3
+      cidr: 27
+    unallocated:
+      ips: 3
       cidr: 27
     enterprise:
       ips: 3
@@ -18,7 +22,10 @@
 
   22: #Micro
     public:
-      ips: 6
+      ips: 3
+      cidr: 26
+    unallocated:
+      ips: 3
       cidr: 26
     enterprise:
       ips: 3
@@ -29,7 +36,10 @@
 
   21: #Small
     public:
-      ips: 6
+      ips: 3
+      cidr: 25
+    unallocated:
+      ips: 3
       cidr: 25
     enterprise:
       ips: 3
@@ -40,7 +50,10 @@
 
   20: #Medium
     public:
-      ips: 6
+      ips: 3
+      cidr: 24
+    unallocated:
+      ips: 3
       cidr: 24
     enterprise:
       ips: 3
@@ -51,7 +64,10 @@
 
   19: #Large
     public:
-      ips: 6
+      ips: 3
+      cidr: 23
+    unallocated:
+      ips: 3
       cidr: 23
     enterprise:
       ips: 3
@@ -62,7 +78,10 @@
 
   18: #X-Large
     public:
-      ips: 6
+      ips: 3
+      cidr: 22
+    unallocated:
+      ips: 3
       cidr: 22
     enterprise:
       ips: 3
